@@ -91,9 +91,9 @@ if __name__ == '__main__':
     os.makedirs(f"{test_add}/{EXP_name}/trn_loss", exist_ok=True)
         
     if dataset_name == "CorPD":
-        train_rawdata_path = "../Dataset/PD_300/Cropped/Train_Merged/"
+        train_rawdata_path = "../Dataset/PD_300/Cropped/Train/"
     if dataset_name == "CorPDFS":
-        train_rawdata_path = "../Dataset/PDFS_300/Cropped/Train_Merged/"
+        train_rawdata_path = "../Dataset/PDFS_300/Cropped/Train/"
     
     CartesianData = DL(train_rawdata_path)
     
