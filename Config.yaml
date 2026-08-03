@@ -1,6 +1,6 @@
 # Training
 device            : "cuda:0"
-Dataset           : "AxFLAIR" # "CorPD" or "AxFLAIR" or "CorPDFS"
+Dataset           : "CorPD" # "CorPD" or "CorPDFS"
 Network           : "UMPIRE" # "UMPIRE" or "PDDL"
 GD_or_CG          : "CG"
 R                 : 8
