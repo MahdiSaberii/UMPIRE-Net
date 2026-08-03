@@ -149,10 +149,7 @@ if __name__ == '__main__':
     best_val_loss   = torch.inf
 
     # Partial Fourier Mask Generator
-    if dataset_name in {"AxFLAIR"}:
-        nx, ny    = 320,320 
-        num_right = int(PF_Factor * 272)
-    elif dataset_name in {"CorPD", "CorPDFS"}:
+    if dataset_name in {"CorPD", "CorPDFS"}:
         nx, ny = 320,332
         num_right = int(PF_Factor * ny)
     
