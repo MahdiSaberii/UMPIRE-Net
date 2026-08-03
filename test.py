@@ -33,7 +33,7 @@ torch.backends.cudnn.benchmark = False
 
 if __name__ == '__main__':
 
-    with open("Config.yaml", "r") as f:
+    with open("./config/Config.yaml", "r") as f:
         config = yaml.safe_load(f)
 
     device            = torch.device(config["Test"]["device"] if torch.cuda.is_available() else "cpu")
