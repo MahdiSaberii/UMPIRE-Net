@@ -32,7 +32,7 @@ UMPIRE-Net/
 ## Quick Start
 Note: This code was tested with `torch==2.2.1+cu121`. 
 
-# Installation
+## Installation
 
 **Note:** This code was tested with `torch==2.2.1+cu121`.
 
