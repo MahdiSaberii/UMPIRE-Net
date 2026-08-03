@@ -68,3 +68,15 @@ chmod +x run_all_train.sh run_all_test.sh
 ./run_all_test.sh
 ```
 
+
+## 📝 BibTeX
+
+If you find this repository useful in your research, please consider citing our work:
+
+@inproceedings{saberi2026umpire,
+  title={UMPIRE-Net: Unrolled Magnitude--Phase Regularization Network for Accelerated MRI},
+  author={Saberi, Mahdi and Kili{\c{c}}, Toygan and Ak{\c{c}}akaya, Mehmet},
+  booktitle={Proc. IEEE Int. Workshop Mach. Learn. Signal Process. (MLSP)},
+  year={2026}
+}
+
