@@ -90,12 +90,10 @@ if __name__ == '__main__':
     os.makedirs(f"{test_add}/{EXP_name}/files", exist_ok=True)
     os.makedirs(f"{test_add}/{EXP_name}/trn_loss", exist_ok=True)
         
-    if dataset_name == "AxFLAIR":
-        train_rawdata_path = "/home/naxos2-raid25/saber032/Main_works/Dataset/FLAIR_Brain/Train/"
     if dataset_name == "CorPD":
-        train_rawdata_path = "/home/naxos2-raid25/saber032/Main_works/Dataset/PD_300/Cropped/Train_Merged/"
+        train_rawdata_path = "../Dataset/PD_300/Cropped/Train_Merged/"
     if dataset_name == "CorPDFS":
-        train_rawdata_path = "/home/naxos2-raid25/saber032/Main_works/Dataset/PDFS_300/Cropped/Train_Merged/"
+        train_rawdata_path = "../Dataset/PDFS_300/Cropped/Train_Merged/"
     
     CartesianData = DL(train_rawdata_path)
     
