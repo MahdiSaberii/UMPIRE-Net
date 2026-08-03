@@ -101,24 +101,15 @@ if __name__ == '__main__':
     model.eval()
 
     # Partial Fourier Mask Generator
-    if dataset_name in {"AxFLAIR"}:
-        nx, ny    = 320,320 
-        num_right = int(PF_Factor * 272)
-    elif dataset_name in {"CorPD", "CorPDFS"}:
+    if dataset_name in {"CorPD", "CorPDFS"}:
         nx, ny = 320,332
         num_right = int(PF_Factor * ny)
     
     Omega_Mask     = torch.tensor(Mask_Generator(nx, ny, Acc_R, ACS=24)).unsqueeze(0).unsqueeze(0)
 
     
-    if dataset_name == "CorPD":
-        Exclude_list = [0,1,2, 38,39,40,41,42,43,44,45,46,47,48,49, 60,61,62,63,64,65,66,  76,78,79,80, 118,119,120, 140,141,142,143,144,145,146,147,148,149, 154,155,156, 170,171,172,173,174,175,176,177,178,179, 192,193,194, 232,233,234, 240,241,242,243,244,245,249 ,272,273,274, 312,313,314, 352,353,354] 
-    elif dataset_name == "CorPDFS":
-        Exclude_list = [0,1,2, 35,36,37, 73,74,75, 110,111,112, 147,148,149, 183,184,185, 225,226,227, 267,268,269, 310,311,312, 353,354,355]
-    elif dataset_name == "AxT2":
-        Exclude_list = [1,2,3,4,5,6,7,38,39,40,41,42,43,44,45,78,79,80,81,82,118,119,120,121,122,154,155,156,157,158,193,194,195,196,233,234,235,272,273,274,275,312,313,314,315,316,317,318,319,320,352,353,354,355,356]
-    elif dataset_name == "AxFLAIR":
-        Exclude_list = []
+    
+    Exclude_list = []
     PSNR, SSIM = [], []
     metrics = []
     
