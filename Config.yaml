@@ -1,0 +1,59 @@
+# Training
+device            : "cuda:0"
+Dataset           : "AxFLAIR" # "CorPD" or "AxFLAIR" or "CorPDFS"
+Network           : "UMPIRE" # "UMPIRE" or "PDDL"
+GD_or_CG          : "CG"
+R                 : 8
+n_epochs          : 100
+Unrolls           : 10
+DF_Steps          : 10
+epsilon           : 1e-6
+delta             : .01
+alpha             : 20
+scheduler_patince : 5
+scheduler_factor  : 0.7
+PF_Factor         : 0.75
+learning_rate     : 0.0005
+Val_Split         : 0.1
+k_MM              : 3
+
+# Unrolling Network 
+Share_params    : False
+SoftPlus        : True
+Smoothing_type  : "Simple"   # "Simple" or "SmoothL1" or "Pseudo-Huber" or "LogExp"
+Momentum_type   : "Nesterov" # "None" or "Polyak" or "Nesterov"
+SSDU_ACS_Block  : 6
+SSDU_rho        : 0.4
+
+
+# Presentation Params
+diff_scale      : 10
+window_scale    : 0.6
+
+# Initial Values
+mu:
+  value: 0.05
+eta:
+  value: 0.15
+beta_1:
+  value: 0.05
+beta_2:
+  value: 0.05
+lambda_ADMM:
+  value: 0.1
+beta_Momentum:
+  value: 0.5
+
+# Test
+Test:
+  PF_Factor       : 0.75
+  device          : "cuda:0"
+  Dataset         : "AxFLAIR" # "CorPD" or "AxFLAIR" or "CorPDFS"
+  Network         : "UMPIRE" # "UMPIRE" or "PDDL"
+  model_epoch     : 10
+  R               : 8
+  Momentum_type   : "Nesterov" # "None" or "Polyak" or "Nesterov"  
+  Smoothing_type  : "Simple" # "Simple" or "SmoothL1" or "Pseudo-Huber" or "LogExp"
+  Share_params    : False
+  SoftPlus        : True
+  threshold       : 1e-3                 
