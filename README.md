@@ -25,10 +25,10 @@ UMPIRE-Net/
 │   ├── DataLoader.py
 │   ├── Unrolled_Network.py
 │   └── Utils.py
-├── run_all_test.sh
-├── run_all_train.sh
 ├── train.py
-└── test.py
+├── test.py
+├── run_all_train.sh
+└── run_all_test.sh
 ```
 
 ## Quick Start
