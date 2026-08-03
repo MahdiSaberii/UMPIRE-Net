@@ -48,7 +48,7 @@ beta_Momentum:
 Test:
   PF_Factor       : 0.75
   device          : "cuda:0"
-  Dataset         : "AxFLAIR" # "CorPD" or "AxFLAIR" or "CorPDFS"
+  Dataset         : "AxFLAIR" # "CorPD" or "CorPDFS"
   Network         : "UMPIRE" # "UMPIRE" or "PDDL"
   model_epoch     : 10
   R               : 8
