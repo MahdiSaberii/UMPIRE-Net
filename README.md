@@ -57,3 +57,14 @@ pip install torch==2.2.1+cu121 --index-url https://download.pytorch.org/whl/cu12
 ```bash
 pip install -r requirements.txt
 ```
+
+## Running the Experiments
+
+To run all CorPD and CorPDFS experiments, place `run_all_train.sh` and `run_all_test.sh` in the repository root. First, make the scripts executable and launch training. After training is complete, run the testing script, which automatically selects the latest available best-validation checkpoint for each experiment.
+
+```bash
+chmod +x run_all_train.sh run_all_test.sh
+./run_all_train.sh
+./run_all_test.sh
+```
+
