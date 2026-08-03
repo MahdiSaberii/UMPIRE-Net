@@ -11,3 +11,18 @@ MRI reconstruction from undersampled k-space measurements is an ill-posed invers
 <p align="center">
   <img src="./Data/PD_PDFS.jpg" width="900">
 </p>
+
+## Repository Structure
+
+```text
+UMPIRE-Net/
+├── config/
+│   └── Config.yaml
+├── src/
+│   ├── DC.py
+│   ├── DataLoader.py
+│   ├── Unrolled_Network.py
+│   └── Utils.py
+├── train.py
+└── test.py
+```
