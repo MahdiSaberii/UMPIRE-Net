@@ -44,8 +44,7 @@ cd UMPIRE-Net
 ### 2. Create and activate conda environment
 
 ```bash
-conda create -n umpire-net
-python=3.10 -y
+conda create -n umpire-net python=3.10 -y
 conda activate umpire-net
 ```
 
