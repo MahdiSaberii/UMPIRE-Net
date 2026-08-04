@@ -37,15 +37,16 @@ UMPIRE-Net/
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/MahdiSaberii/Non-Cartesian-SSDU-MRI.git
-cd Non-Cartesian-SSDU-MRI
+git clone https://github.com/MahdiSaberii/UMPIRE-Net/
+cd UMPIRE-Net
 ```
 
 ### 2. Create and activate conda environment
 
 ```bash
-conda create -n non_cartesian_ssdu_mri python=3.10 -y
-conda activate non_cartesian_ssdu_mri
+conda create -n umpire-net
+python=3.10 -y
+conda activate umpire-net
 ```
 
 ### 3. Install PyTorch
