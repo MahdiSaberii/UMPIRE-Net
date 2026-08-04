@@ -37,7 +37,7 @@ UMPIRE-Net/
 ### 1. Clone this repository
 
 ```bash
-git clone https://github.com/MahdiSaberii/UMPIRE-Net/
+git clone https://github.com/MahdiSaberii/UMPIRE-Net.git
 cd UMPIRE-Net
 ```
 
