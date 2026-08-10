@@ -48,15 +48,10 @@ conda create -n umpire-net python=3.10 -y
 conda activate umpire-net
 ```
 
-### 3. Install PyTorch
+### 3. Install requirements
 
 ```bash
 pip install torch==2.2.1+cu121 --index-url https://download.pytorch.org/whl/cu121
-```
-
-### 4. Install remaining requirements
-
-```bash
 pip install -r requirements.txt
 ```
 
