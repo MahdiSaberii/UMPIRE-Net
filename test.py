@@ -128,7 +128,7 @@ if __name__ == '__main__':
             Zeros_Mask[:,:,:,:num_right] = 1
             Ones_Mask                    = torch.ones_like(Omega_Mask) - Zeros_Mask # These two mask are for the partial Fourier sampling
             ksp_pf                       = ksp * Zeros_Mask
-            label                        = IFFT(ksp_pf)
+            label                        = IFFT(ksp)
             label                        = torch.sum(label * torch.conj(coil), axis=1, keepdims=True)
             
             Omega_Mask  = Omega_Mask  * Zeros_Mask
