@@ -72,7 +72,7 @@ if __name__ == '__main__':
     
     test_add          = f"./Test_Results"
     if Network in {"UMPIRE"}:
-        EXP_name  = f"{Network}_{dataset_name}_R{Acc_R}_UNet_Share{share_flag}_{SoftPlus_flag}_{Momentum_type}_{PF_Factor}_epsilon{epsilon}_Smoothing_{Smoothing_type}"
+        EXP_name  = f"{Network}_{dataset_name}_R{Acc_R}_UNet_Share{share_flag}_{SoftPlus_flag}_{Momentum_type}_{PF_Factor}_epsilon{epsilon}"#Smoothing_{Smoothing_type}
     if Network == "PDDL":
         EXP_name  = f"{Network}_LARGE_{dataset_name}_R{Acc_R}_UNet_Share{share_flag}_{GD_or_CG}_{SoftPlus_flag}_{PF_Factor}"
     
