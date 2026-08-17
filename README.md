@@ -1,6 +1,6 @@
 # UMPIRE-Net: Unrolled Magnitude–Phase Regularization Network for Accelerated MRI
 
-<p> <a href="(https://arxiv.org/abs/2608.14422)"> <img src="https://img.shields.io/badge/arXiv-2501.01908-b31b1b.svg"> </a> </p>
+<p> <a href="https://arxiv.org/abs/2608.14422"> <img src="https://img.shields.io/badge/arXiv-2501.01908-b31b1b.svg"> </a> </p>
 
 <p align="center">
   <img src="./Data/pipeline.jpg" width="900">
