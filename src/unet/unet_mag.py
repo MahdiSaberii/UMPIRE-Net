@@ -742,17 +742,7 @@ class UNetModel(nn.Module):
         self.output_blocks.apply(convert_module_to_f32)
 
     def norm(self, x: th.Tensor) -> Tuple[th.Tensor, th.Tensor, th.Tensor]:
-        # # group norm
-        # b, c, h, w = x.shape
-        # x = x.view(b, 2, c // 2 * h * w)
 
-        # mean = x.mean(dim=2).view(b, 2, 1, 1)
-        # std = x.std(dim=2).view(b, 2, 1, 1)
-
-        # x = x.view(b, c, h, w)
-        '''''''''''''''
-        Junno Edit
-        '''''''''''''''
         b, c, h, w = x.shape
         x = x.view(b, 1, c // 1 * h * w)
 
@@ -761,10 +751,6 @@ class UNetModel(nn.Module):
 
         x = x.view(b, c, h, w)
         # x = (x - mean) / std
-        '''''''''''''''
-        Junno Edit
-        '''''''''''''''
-
         return (x - mean) / std, mean, std
 
     def unnorm(
